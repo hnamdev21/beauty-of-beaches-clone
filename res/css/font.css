@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-Bold.woff2") format("woff2"),
+    url("../font-text/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-BlackItalic.woff2") format("woff2"),
+    url("../font-text/Poppins-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-Black.woff2") format("woff2"),
+    url("../font-text/Poppins-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-BoldItalic.woff2") format("woff2"),
+    url("../font-text/Poppins-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-ExtraBoldItalic.woff2") format("woff2"),
+    url("../font-text/Poppins-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-ExtraBold.woff2") format("woff2"),
+    url("../font-text/Poppins-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-ExtraLight.woff2") format("woff2"),
+    url("../font-text/Poppins-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-Italic.woff2") format("woff2"),
+    url("../font-text/Poppins-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-ExtraLightItalic.woff2") format("woff2"),
+    url("../font-text/Poppins-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-Light.woff2") format("woff2"),
+    url("../font-text/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-LightItalic.woff2") format("woff2"),
+    url("../font-text/Poppins-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-Medium.woff2") format("woff2"),
+    url("../font-text/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-MediumItalic.woff2") format("woff2"),
+    url("../font-text/Poppins-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-Regular.woff2") format("woff2"),
+    url("../font-text/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-SemiBold.woff2") format("woff2"),
+    url("../font-text/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-SemiBoldItalic.woff2") format("woff2"),
+    url("../font-text/Poppins-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-Thin.woff2") format("woff2"),
+    url("../font-text/Poppins-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font-text/Poppins-ThinItalic.woff2") format("woff2"),
+    url("../font-text/Poppins-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font-text/Ubuntu-Bold.woff2") format("woff2"),
+    url("../font-text/Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font-text/Ubuntu-BoldItalic.woff2") format("woff2"),
+    url("../font-text/Ubuntu-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font-text/Ubuntu-Italic.woff2") format("woff2"),
+    url("../font-text/Ubuntu-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font-text/Ubuntu-Light.woff2") format("woff2"),
+    url("../font-text/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font-text/Ubuntu-LightItalic.woff2") format("woff2"),
+    url("../font-text/Ubuntu-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font-text/Ubuntu-Medium.woff2") format("woff2"),
+    url("../font-text/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font-text/Ubuntu-MediumItalic.woff2") format("woff2"),
+    url("../font-text/Ubuntu-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../font-text/Ubuntu-Regular.woff2") format("woff2"),
+    url("../font-text/Ubuntu-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
