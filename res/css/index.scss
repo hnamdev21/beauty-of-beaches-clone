@@ -36,6 +36,16 @@ body {
 
     .inner {
       height: 60px;
+
+      .wrapper-favorite-icon {
+        .wrapper-favorite-items {
+          top: calc(100% + 20px);
+
+          &::before {
+            height: 20px;
+          }
+        }
+      }
     }
   }
 
@@ -83,10 +93,17 @@ body {
       color: var(--light-red);
       font-size: 25px;
       transition: all 0.3s linear;
-      cursor: pointer;
+
+      i {
+        cursor: pointer;
+      }
 
       &:hover {
         transform: translate(0, -5px);
+
+        .wrapper-favorite-items {
+          display: block;
+        }
       }
 
       &::before {
@@ -104,6 +121,63 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+
+      .wrapper-favorite-items {
+        display: none;
+        top: calc(100% + 40px);
+        right: 0;
+        width: css-clamp(250px, 350px, 350px);
+        background-color: #ffffff;
+        box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.5);
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(0, -100%);
+          width: 100%;
+          height: 40px;
+          background-color: transparent;
+        }
+
+        .favorite-item {
+          border-bottom: 0.5px solid #eeeeee;
+          padding: 10px;
+
+          column-gap: 10px;
+
+          .favorite__image {
+            flex: 1;
+            max-width: 120px;
+          }
+
+          .favorite__name {
+            flex: 2;
+            max-width: 150px;
+            font-size: 14px;
+            color: #000000;
+          }
+
+          .favorite__remove-btn {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 60px;
+            height: 30px;
+            font-size: 12px;
+            color: #ffffff;
+            background-color: var(--light-red);
+            cursor: pointer;
+            transition: all 0.3s linear;
+
+            &:hover {
+              transform: translate(0, -4px);
+            }
+          }
+        }
       }
     }
   }
