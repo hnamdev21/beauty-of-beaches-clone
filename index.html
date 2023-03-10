@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="res/css/index.css" />
     <link rel="stylesheet" href="res/css/animation.css" />
 
-    <script src="src/javascript/index.js"></script>
+    <script type="module" src="src/javascript/index.js"></script>
   </head>
   <body>
     <header id="header-page">
@@ -97,7 +97,7 @@
         </div>
       </section>
 
-      <section class="top-list-section">
+      <section class="top-list-section top-10-famous">
         <div class="inner relative">
           <h4 class="list-title">Top 10 famous beaches</h4>
 
@@ -111,31 +111,7 @@
           </div>
 
           <div class="mask flex flex-align-center">
-            <div class="wrapper-cards flex">
-              <div class="card relative">
-                <div class="top-card relative">
-                  <div class="card-image">
-                    <img
-                      src="res/img/gallery/whitehaven-beach__australia/whitehaven-beach-2.jpg"
-                      alt=""
-                      class="beach__image"
-                    />
-                  </div>
-                  <div class="card-sub-element">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <div class="bot-card relative">
-                  <h4 class="beach__name">AAAAAAAA</h4>
-                  <ul class="beach__info">
-                    <li class="info__loaction">Street street</li>
-                    <li class="info__views">124124</li>
-                    <li class="info__famous">535232</li>
-                  </ul>
-                  <a href="#" class="beach__link">Learn more</a>
-                </div>
-              </div>
-            </div>
+            <div class="wrapper-cards flex"></div>
           </div>
         </div>
       </section>
@@ -148,26 +124,7 @@
 
           <div class="mask flex flex-align-center">
             <div class="wrapper-cards flex">
-              <div class="card">
-                <div class="top-card flex flex-align-center flex-space-between">
-                  <h4 class="user__name">Tran Hoang Nam</h4>
-                  <span class="user__public-date">10/03/2023</span>
-                </div>
-                <div class="bot-card flex flex-align-center flex-space-between">
-                  <div class="user__image-uploaded">
-                    <img
-                      src="res/img/gallery/whitehaven-beach__australia/whitehaven-beach-2.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="user__feedback text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Placeat aut ratione incidunt facere rerum earum modi
-                    cupiditate dicta
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -179,50 +136,59 @@
           </div>
 
           <div class="wrapper-cards flex">
-            <div class="card flex">
-              <div class="left-card">
-                <div class="card-image">
-                  <img
-                    src="res/img/festivals/anjunadeep-explorations.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="right-card flex flex-col">
-                <h4 class="festival__name">AAAAAA</h4>
-                <div class="festival__detail">
-                  <div class="detail__location">AAAAAAA</div>
-                  <p class="detail__desc">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta sapiente, quod libero perspiciatis accusamus,
-                    voluptate doloremque temporibus animi fugit nam mollitia,
-                    quam eligendi assumenda. Minima, facilis! Sed inventore quos
-                    tempore.
-                  </p>
-                </div>
-                <div
-                  class="festival__countdown flex flex-align-center flex-space-between"
-                >
-                  <div class="countdown__day">
-                    Day <span class="day">1</span>
-                  </div>
-                  <div class="countdown__hour">
-                    Hour <span class="hour">1</span>
-                  </div>
-                  <div class="countdown__minutes">
-                    Minute <span class="minutes">1</span>
-                  </div>
-                  <div class="countdown__second">
-                    Second <span class="second">1</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
 
           <a href="#" class="view-btn">VIEW MORE</a>
         </div>
       </section>
+
+      <section class="subcribe-section">
+        <div class="inner flex flex-align-center flex-space-between">
+          <div class="wrapper-content relative">
+            <h2 class="title">Subcribe us now<br />to get news<br />fastest</h2>
+            <form action="" class="subcribe-form" method="POST">
+              <input
+                type="email"
+                name="email"
+                id="email-input"
+                placeholder="Enter your email..."
+              />
+              <input type="submit" value="Subcribe" class="subcribe-btn" />
+            </form>
+          </div>
+
+          <div class="wrapper-image">
+            <img src="res/img/sliders/cancun-1.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="top-list-section top-10-views">
+        <div class="inner relative">
+          <h4 class="list-title">Top 10 views beaches</h4>
+
+          <div class="wrapper-btns">
+            <div class="left-btn circle flex flex-center">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="right-btn circle flex flex-center">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+
+          <div class="mask flex flex-align-center">
+            <div class="wrapper-cards flex"></div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer id="footer-page">
+      <div class="inner flex flex-align-center flex-space-between relative">
+          <span class="designer">Design by Hoang Nam Tran</span>
+          <span class="developer">Develop by Hoang Nam Tran</span>
+        </div>
+    </footer>
   </body>
 </html>
