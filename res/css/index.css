@@ -1,0 +1,320 @@
+body {
+  background-color: #f8fcff; }
+
+#header-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  background-color: transparent;
+  padding: 10px 0;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.5s linear; }
+  #header-page.resize {
+    background-color: var(--light-blue); }
+    #header-page.resize .inner {
+      height: 60px; }
+  #header-page .inner {
+    height: 80px;
+    transition: all 0.4s linear; }
+    #header-page .inner .wrapper-logo {
+      margin-right: auto;
+      flex: 1;
+      max-width: 200px; }
+    #header-page .inner .wrapper-nav {
+      column-gap: 36px; }
+      #header-page .inner .wrapper-nav .nav-link a {
+        position: relative;
+        color: #f5f5f5;
+        font-weight: 500;
+        padding: 8px 10px;
+        transition: all 0.2s linear; }
+        #header-page .inner .wrapper-nav .nav-link a.active::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 0);
+          width: calc(100% - 20px);
+          height: 2px;
+          border-radius: 5px;
+          background-color: #ffffff; }
+    #header-page .inner .wrapper-favorite-icon {
+      position: relative;
+      margin-left: 36px;
+      color: var(--light-red);
+      font-size: 25px;
+      transition: all 0.3s linear;
+      cursor: pointer; }
+      #header-page .inner .wrapper-favorite-icon:hover {
+        transform: translate(0, -5px); }
+      #header-page .inner .wrapper-favorite-icon::before {
+        content: "0";
+        position: absolute;
+        right: -10px;
+        top: -5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        color: var(--light-red);
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
+#main-page .hero-section .wrapper-image {
+  background: radial-gradient(#ffffff00, #00000066, #00000080), url("../../res/img/gallery/whitehaven-beach__australia/whitehaven-beach-1.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px; }
+
+#main-page .intro-section {
+  margin: 40px 0; }
+  #main-page .intro-section .inner .wrapper-title {
+    margin: 0 auto 30px;
+    width: min(calc(100% - 40px), 838px); }
+  #main-page .intro-section .inner .wrapper-cards {
+    margin: 0 auto 30px;
+    width: min(calc(100% - 40px), 838px);
+    column-gap: 81px; }
+    #main-page .intro-section .inner .wrapper-cards .card {
+      flex: 1;
+      max-width: 224px;
+      height: 300px;
+      border-radius: 15px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
+      opacity: 1;
+      transition: all 0.2s linear; }
+      #main-page .intro-section .inner .wrapper-cards .card:hover {
+        opacity: 1; }
+      #main-page .intro-section .inner .wrapper-cards .card:not(:hover) {
+        opacity: 0.5; }
+
+#main-page .breadcrumb-section {
+  margin-top: 80px; }
+  #main-page .breadcrumb-section .inner .breadcrumb-list {
+    column-gap: 10px; }
+    #main-page .breadcrumb-section .inner .breadcrumb-list .breadcrumb-link:not(:last-child)::after {
+      content: "\f105";
+      font-family: "FontAwesome";
+      font-size: 12px;
+      color: #000000; }
+    #main-page .breadcrumb-section .inner .breadcrumb-list .breadcrumb-link a {
+      color: #ccc;
+      transition: all 0.2s linear; }
+      #main-page .breadcrumb-section .inner .breadcrumb-list .breadcrumb-link a.active {
+        color: #000000; }
+      #main-page .breadcrumb-section .inner .breadcrumb-list .breadcrumb-link a:hover {
+        color: #000000; }
+
+#main-page .top-list-section {
+  margin-top: 30px;
+  padding-bottom: 30px; }
+  #main-page .top-list-section .inner .list-title {
+    font-size: 16px;
+    font-weight: 400; }
+  #main-page .top-list-section .inner .wrapper-btns .left-btn,
+  #main-page .top-list-section .inner .wrapper-btns .right-btn {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    cursor: pointer; }
+  #main-page .top-list-section .inner .wrapper-btns .right-btn {
+    left: unset;
+    right: -40px; }
+  #main-page .top-list-section .inner .mask {
+    height: 330px;
+    overflow: auto; }
+    #main-page .top-list-section .inner .mask::-webkit-scrollbar {
+      display: none; }
+    #main-page .top-list-section .inner .mask .wrapper-cards {
+      width: max-content; }
+      #main-page .top-list-section .inner .mask .wrapper-cards .card {
+        margin: 0 20px;
+        height: 300px;
+        width: 224px;
+        border-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5);
+        overflow: hidden; }
+        #main-page .top-list-section .inner .mask .wrapper-cards .card .top-card {
+          width: 100%;
+          height: 100%;
+          transition: all 0.3 linear; }
+          #main-page .top-list-section .inner .mask .wrapper-cards .card .top-card .card-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px 15px 0 0;
+            overflow: hidden; }
+            #main-page .top-list-section .inner .mask .wrapper-cards .card .top-card .card-image .beach__image {
+              width: 250%; }
+          #main-page .top-list-section .inner .mask .wrapper-cards .card .top-card .card-sub-element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer; }
+            #main-page .top-list-section .inner .mask .wrapper-cards .card .top-card .card-sub-element:hover {
+              animation: beat 0.5s linear infinite; }
+        #main-page .top-list-section .inner .mask .wrapper-cards .card .bot-card {
+          width: 100%;
+          height: 200px;
+          padding: 10px;
+          background-color: #ffffff;
+          transform: translate(0, 100%);
+          transition: all 0.3s linear; }
+          #main-page .top-list-section .inner .mask .wrapper-cards .card .bot-card .beach__name {
+            font-size: 18px;
+            font-weight: 400; }
+          #main-page .top-list-section .inner .mask .wrapper-cards .card .bot-card .beach__info li {
+            font-size: 14px;
+            padding-left: 10px; }
+          #main-page .top-list-section .inner .mask .wrapper-cards .card .bot-card .beach__link {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            color: var(--light-blue);
+            font-size: 12px;
+            font-style: italic; }
+        #main-page .top-list-section .inner .mask .wrapper-cards .card:hover .bot-card {
+          position: absolute;
+          z-index: 1;
+          bottom: 200px; }
+
+#main-page .latest-feedback-section {
+  margin-top: 80px; }
+  #main-page .latest-feedback-section .inner .wrapper-title .title--md {
+    text-align: center; }
+  #main-page .latest-feedback-section .inner .mask {
+    margin-top: 10px;
+    height: 200px;
+    overflow: hidden; }
+    #main-page .latest-feedback-section .inner .mask .wrapper-cards {
+      width: max-content;
+      height: 175px;
+      animation: autoScroll 20s linear infinite; }
+      #main-page .latest-feedback-section .inner .mask .wrapper-cards .card {
+        margin: 0 40px;
+        width: 305px;
+        height: 175px;
+        border-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5); }
+        #main-page .latest-feedback-section .inner .mask .wrapper-cards .card .top-card {
+          position: relative;
+          width: 100%;
+          height: 50px;
+          padding: 15px 10px;
+          border-radius: 15px 15px 0 0; }
+          #main-page .latest-feedback-section .inner .mask .wrapper-cards .card .top-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #000000; }
+          #main-page .latest-feedback-section .inner .mask .wrapper-cards .card .top-card .user__name {
+            font-size: 16px;
+            font-weight: 400; }
+          #main-page .latest-feedback-section .inner .mask .wrapper-cards .card .top-card .user__public-date {
+            font-size: 16px;
+            color: #ccc; }
+        #main-page .latest-feedback-section .inner .mask .wrapper-cards .card .bot-card {
+          width: 100%;
+          height: 125px;
+          padding: 10px;
+          border-radius: 0 0 15px 15px;
+          column-gap: 15px; }
+          #main-page .latest-feedback-section .inner .mask .wrapper-cards .card .bot-card .user__image-uploaded {
+            flex: 2;
+            max-width: 75px;
+            height: 50px;
+            border-radius: 5px;
+            overflow: hidden; }
+            #main-page .latest-feedback-section .inner .mask .wrapper-cards .card .bot-card .user__image-uploaded img {
+              width: 110%; }
+          #main-page .latest-feedback-section .inner .mask .wrapper-cards .card .bot-card .user__feedback {
+            flex: 1;
+            font-size: 12px; }
+
+#main-page .festivals-section {
+  margin-top: 80px; }
+  #main-page .festivals-section .inner .wrapper-title .title--md {
+    text-align: center; }
+  #main-page .festivals-section .inner .wrapper-cards {
+    margin: 30px 0 20px;
+    gap: 30px 20px;
+    flex-wrap: wrap; }
+    #main-page .festivals-section .inner .wrapper-cards .card {
+      flex: 1;
+      max-width: 590px;
+      min-width: 590px;
+      height: 360px;
+      border-radius: 15px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5); }
+      #main-page .festivals-section .inner .wrapper-cards .card .left-card {
+        flex: 1;
+        max-width: 250px;
+        height: 100%;
+        border-radius: 15px 0 0 15px;
+        overflow: hidden; }
+        #main-page .festivals-section .inner .wrapper-cards .card .left-card:hover .card-image img {
+          scale: 1.5;
+          transition: all 0.4s linear; }
+        #main-page .festivals-section .inner .wrapper-cards .card .left-card .card-image {
+          width: 100%;
+          height: 100%; }
+      #main-page .festivals-section .inner .wrapper-cards .card .right-card {
+        flex: 2;
+        row-gap: 20px;
+        max-width: 340px;
+        height: 100%;
+        padding: 20px;
+        border-radius: 0 15px 15px 0; }
+        #main-page .festivals-section .inner .wrapper-cards .card .right-card .festival__name {
+          text-align: center;
+          font-size: 18px;
+          font-weight: 450; }
+        #main-page .festivals-section .inner .wrapper-cards .card .right-card .festival__detail .detail__desc {
+          margin-top: 10px; }
+        #main-page .festivals-section .inner .wrapper-cards .card .right-card .festival__countdown {
+          margin-top: auto; }
+          #main-page .festivals-section .inner .wrapper-cards .card .right-card .festival__countdown span {
+            display: block;
+            text-align: center;
+            font-size: 30px; }
+  #main-page .festivals-section .inner .view-btn {
+    bottom: 0;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, 150%); }
+
+.view-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  padding: 8px 30px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--light-blue);
+  box-shadow: 0 4px 2px 0 var(--deeper-blue);
+  transition: all 0.2s linear; }
+  .view-btn:hover {
+    background-color: var(--mder-blue); }
+  .view-btn:active {
+    transform: translate(0, 4px);
+    box-shadow: 0 0 0 0; }

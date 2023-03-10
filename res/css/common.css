@@ -1,0 +1,85 @@
+.title--large {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.title--md {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.title--small {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.inner {
+  width: min(100% - 40px, 1200px);
+  margin: 0 auto;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.m-t-80 {
+  margin-top: 80px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.inline-center {
+  display: inline;
+  margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.circle {
+  border-radius: 50%;
+}
