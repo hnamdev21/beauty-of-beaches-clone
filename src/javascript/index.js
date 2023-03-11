@@ -3,17 +3,20 @@ import renderTopFamousCards from "./utils/renderTopFamousCards.js";
 import renderTopViewCards from "./utils/renderTopViewCards.js";
 import renderFeedbackCards from "./utils/renderFeedbackCards.js";
 import renderFestivalCards from "./utils/renderFestivalCards.js";
+import handleFavoriteItemHome from "./utils/handleFavoriteItemHome.js";
 
 const APP = {
   init() {
     const url = new URL(window.location);
 
     APP.addAnimationHeader();
-    APP.addEventListener.addEventHomePage();
+
     renderTopFamousCards();
     renderTopViewCards();
     renderFeedbackCards();
     renderFestivalCards();
+
+    APP.addEventListener.addEventHomePage();
   },
 
   checkLocation() {},
@@ -32,6 +35,7 @@ const APP = {
   addEventListener: {
     addEventHomePage() {
       addEventScrollList();
+      handleFavoriteItemHome();
     },
   },
 
